@@ -61,8 +61,8 @@ main#index section {
     margin-top: 2rem;
 }
 main#index section p {
-    line-height: 1.8; /* quanto maior o número, mais espaço entre as linhas */
-    margin-bottom: 1rem; /* espaço entre os parágrafos */
+    line-height: 1.8; 
+    margin-bottom: 1rem;
   }
 .fotos{
     display: grid;
@@ -121,35 +121,122 @@ main#index section p {
     padding: 0 2rem;
     margin-top: 2rem;
   }
+  main#login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+  }
   
-  .card {
-    background-color: var(--white);
-    border-radius: 1rem;
-    width: 30%;
-    padding: 1rem;
+  main#login section {
+    background: var(--secondary);
+    padding: 7rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
   }
   
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+  main#login h2 {
+    margin-bottom: 2rem;
+  }
+  main#cadastro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
   }
   
-  .card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
+  main#cadastro section {
+    background: var(--secondary);
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
   }
   
-  .card p {
-    line-height: 1.6;
-    border: 2px solid var(--black);
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-top: 0.5rem;
+  main#cadastro h2 {
+    margin-bottom: 1.5rem;
   }
+
+  main#avaliacoes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  main#avaliacoes section {
+    background: var(--secondary);
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  main#avaliacoes h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    gap: 0.5rem;
+  }
+  
+  .input-group img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    font-size: 1rem;
+  }
+  
+  main#login button {
+    background: var(--primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  main#cadastro button {
+    background: var(--primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  main#avaliacoes button {
+    background: var(--primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
 footer {
     background-color: var(--primary);
     display: flex;
