@@ -40,7 +40,6 @@ header nav a {
     padding: 0.5rem;
 }
 
-
 header .login {
     margin-left: auto;
     text-decoration: none;
@@ -49,8 +48,110 @@ header .login {
     padding: 0.5rem 1rem;
     border-radius: 1rem;
 }
+main {
+    min-height: calc(100vh - 7.6rem);
+    max-width: 1040px;
+    margin: 0 auto;
+}
+main#index section {
+    flex: 1 1 30%;
+    background-color: var(--secondary);
+    border: 0.2rem solid var(--secondary);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+main#index section p {
+    line-height: 1.8; /* quanto maior o número, mais espaço entre as linhas */
+    margin-bottom: 1rem; /* espaço entre os parágrafos */
+  }
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  
+.fotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  main#hospedagens section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .card p {
+    line-height: 1.6;
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  main#passeios section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .card p {
+    line-height: 1.6;
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
 footer {
-    background-color:  var(--primary);
+    background-color: var(--primary);
     display: flex;
     align-items: center;
     height: 3rem;
