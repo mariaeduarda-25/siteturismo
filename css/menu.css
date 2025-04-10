@@ -1,0 +1,48 @@
+header input#menu {
+    display: none;
+}
+
+@media(max-width: 568px) {
+    header nav div {
+        display: none;
+    }
+    header nav div a {
+        background-color: aqua;
+        min-width: 8rem;
+
+    }
+    header nav label {
+        margin-left: 0.5rem;
+        border: 0.18rem solid var(--black);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    header nav label span {
+        border: 0.1rem solid var(--black);
+        width: 1.6rem;
+        height: 0.1rem;
+    }
+
+    header nav label span:first-child {
+        margin-top: 0.2rem;
+    }
+
+    header nav label span:last-child {
+        margin-bottom: 0.2rem;
+    }
+
+    header input#menu:checked~nav div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-start;
+        top: 4rem;
+        right: 0.5rem;
+    }
+}

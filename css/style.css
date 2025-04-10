@@ -21,6 +21,7 @@ header {
         align-items: center;
         background-color: var(--primary);
         padding: 10px 20px;
+        justify-content: space-between;
       }
       
 
@@ -50,7 +51,6 @@ header .login {
 }
 main {
     min-height: calc(100vh - 7.6rem);
-    max-width: 1040px;
     margin: 0 auto;
 }
 main#index section {
@@ -58,7 +58,7 @@ main#index section {
     background-color: var(--secondary);
     border: 0.2rem solid var(--secondary);
     border-radius: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
 }
 main#index section p {
     line-height: 1.8; 
@@ -66,7 +66,7 @@ main#index section p {
   }
 .fotos{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
     margin-top: 4rem;
   }
@@ -77,18 +77,16 @@ main#index section p {
     border-radius: 1rem;
   }
   main#hospedagens section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
     gap: 2rem;
     padding: 0 2rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   
   .card {
     background-color: var(--white);
     border-radius: 1rem;
-    width: 30%;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -114,12 +112,11 @@ main#index section p {
     margin-top: 0.5rem;
   }
   main#passeios section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
     gap: 2rem;
     padding: 0 2rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   main#login {
     flex: 1;
