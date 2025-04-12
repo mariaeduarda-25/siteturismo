@@ -41,7 +41,7 @@ header nav a {
     padding: 0.5rem;
 }
 
-header .login {
+header .botao {
     margin-left: auto;
     text-decoration: none;
     color: var(--black);
@@ -58,7 +58,10 @@ main#index section {
     background-color: var(--secondary);
     border: 0.2rem solid var(--secondary);
     border-radius: 0.5rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 0;
 }
 main#index section p {
     line-height: 1.8; 
@@ -68,7 +71,7 @@ main#index section p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   
 .fotos img {
@@ -80,7 +83,7 @@ main#index section p {
     display: grid;
     gap: 2rem;
     padding: 0 2rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   
@@ -115,7 +118,7 @@ main#index section p {
     display: grid;
     gap: 2rem;
     padding: 0 2rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
   main#login {

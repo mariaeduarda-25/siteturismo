@@ -7,7 +7,7 @@ header input#menu {
         display: none;
     }
     header nav div a {
-        background-color: aqua;
+        background-color:var(--secondary);
         min-width: 8rem;
 
     }
