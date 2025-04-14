@@ -3,6 +3,10 @@ header input#menu {
 }
 
 @media(max-width: 568px) {
+
+    header{
+        justify-content: space-between;
+    }
     header nav div {
         display: none;
     }
