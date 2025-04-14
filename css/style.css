@@ -259,7 +259,7 @@ main#index section p {
     cursor: pointer;
   }
 
-  main#cadastro button {
+  main#cadastro button{
     background: var(--primary);
     border: none;
     padding: 0.5rem 1rem;
@@ -279,6 +279,9 @@ main#index section p {
   }
   
   main#avaliacoes button:hover {
+    background-color: #d4a7f2;
+  }
+  main#cadastro button:hover{
     background-color: #d4a7f2;
   }
 
