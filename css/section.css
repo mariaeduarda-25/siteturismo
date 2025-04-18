@@ -1,22 +1,22 @@
 @media (max-width: 610px) {
     main#login, main#cadastro, main#avaliacoes {
-        padding: 3rem 1rem; 
+        padding: 3rem 1rem;
     }
 
     main#login section, main#cadastro section, main#avaliacoes section {
         width: 90%; 
         max-width: 100%;
-        margin-top: 2rem; 
-        padding: 2rem; 
+        margin-top: 2rem;
+        padding: 2rem;
     }
 
     main#login h2, main#cadastro h2, main#avaliacoes h2 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
     .input-group input, .input-group textarea {
-        width: 100%; 
+        width: 100%;
         padding: 0.5rem;
     }
 
@@ -25,7 +25,6 @@
         gap: 0.5rem;
     }
 
-    /* Ajuste nos botões */
     main#login button, main#cadastro button, main#avaliacoes button {
         width: 100%; 
         padding: 0.7rem 1rem;
