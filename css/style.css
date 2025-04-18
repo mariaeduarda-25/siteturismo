@@ -23,8 +23,6 @@ header {
         padding: 10px 20px;
         justify-content: flex-start;
       }
-      
-
 header img {
     height: 3rem;
     margin: 0.5rem;
@@ -78,45 +76,57 @@ main#index section p {
   }
   
 .fotos img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
   }
   main#hospedagens section {
     display: grid;
     gap: 2rem;
     padding: 0 2rem;
     margin-top: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    align-items: stretch;
   }
-  
   .card {
-    background-color: var(--white);
-    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    max-width: 100%;
+    min-height: 580px; 
   }
   
   .card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 1rem;
-    margin-bottom: 1rem;
   }
   
   .card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    min-height: 60px; 
   }
   
   .card p {
     line-height: 1.6;
-    border: 2px solid var(--black);
+    border: 2px solid black;
     border-radius: 1rem;
     padding: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
   main#passeios section {
     display: grid;
     gap: 2rem;
@@ -133,15 +143,15 @@ main#index section p {
   }
   
   main#login section {
-        background: var(--secondary);
-        padding: 2rem;
-        border: 1px solid black;
-        border-radius: 15px;
-        width: 90%;
-        max-width: 600px;
-        height: auto; 
-        text-align: center;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      background: var(--secondary);
+      padding: 2rem;
+      border: 1px solid black;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      height: auto; 
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     main#login section div{ 
@@ -165,8 +175,8 @@ main#index section p {
       background: #d4a7f2;
     }
         
-  main#login h2 {
-    margin-bottom: 2rem;
+    main#login h2 {
+      margin-bottom: 2rem;
   }
   main#cadastro {
       flex: 1;

@@ -2,7 +2,7 @@ header input#menu {
     display: none;
 }
 
-@media(max-width: 568px) {
+@media(max-width: 610px) {
 
     header{
         justify-content: space-between;
