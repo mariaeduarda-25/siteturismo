@@ -15,7 +15,6 @@
     --black: #000;
     --white: #fff;
 }
-
 header {
         display: flex;
         align-items: center;
@@ -51,6 +50,7 @@ header .botao{
 header .botao:active{
     font-weight: bold;
 }
+
 main {
     min-height: calc(100vh - 7.6rem);
     margin: 0 auto;
@@ -80,7 +80,7 @@ main#index section p {
   height: auto;
   border-radius: 1rem;
   }
-  main#hospedagens section {
+  main#hospedagens section,main#passeios section {
     display: grid;
     gap: 2rem;
     padding: 0 2rem;
@@ -127,13 +127,6 @@ main#index section p {
     justify-content: center;
   }
   
-  main#passeios section {
-    display: grid;
-    gap: 2rem;
-    padding: 0 2rem;
-    margin-top: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  }
   main#login {
     flex: 1;
     display: flex;
@@ -160,23 +153,13 @@ main#index section p {
       gap: 1.5rem;
       margin-top: 2rem;
     }
-    main#login button {
-      background: var(--primary);
-      border: none;
-      padding: 0.7rem 2rem;
-      margin: 0;
-      border-radius: 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    
-    main#login button:hover {
+   main#login button:hover,main#cadastro button:hover,main#avaliacoes button:hover {
       background: #d4a7f2;
     }
         
-    main#login h2 {
+    main#login h2,main#cadastro h2,main#avaliacoes h2 {
       margin-bottom: 2rem;
+
   }
   main#cadastro {
       flex: 1;
@@ -198,11 +181,6 @@ main#index section p {
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
     
   }
-  
-  main#cadastro h2 {
-    margin-bottom: 1.5rem;
-  }
-
   main#avaliacoes {
     flex: 1;
     display: flex;
@@ -221,11 +199,6 @@ main#index section p {
     height: auto;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
-  }
-  
-  
-  main#avaliacoes h2 {
-    margin-bottom: 1.5rem;
   }
   .input-group textarea {
     border: none;
@@ -260,7 +233,7 @@ main#index section p {
     font-size: 1rem;
   }
   
-  main#login button {
+  main#login button,main#cadastro button {
     background: var(--primary);
     border: none;
     padding: 0.5rem 1rem;
@@ -268,16 +241,6 @@ main#index section p {
     border-radius: 20px;
     cursor: pointer;
   }
-
-  main#cadastro button{
-    background: var(--primary);
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
   main#avaliacoes button {
     background: var(--primary);
     border: none;
@@ -285,16 +248,9 @@ main#index section p {
     border-radius: 20px;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: 1rem;
     transition: 0.3s ease;
   }
-  
-  main#avaliacoes button:hover {
-    background-color: #d4a7f2;
-  }
-  main#cadastro button:hover{
-    background-color: #d4a7f2;
-  }
-
 footer {
     background-color: var(--primary);
     display: flex;
